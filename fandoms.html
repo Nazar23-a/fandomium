@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="#8B5CF6">
+    <meta http-equiv="Content-Security-Policy" content="require-trusted-types-for 'script'; trusted-types app-html dompurify">
+    <title>Фандоми</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.4.17/dist/purify.min.js"></script>
+    <script type="module" src="fandoms_script.js"></script>
+</head>
+<body>
+    <nav>
+        <a id="selected" href="fandoms.html">FANDOMS</a>
+        <a href="characters.html">CHARACTERS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="quiz.html">QUIZ</a>
+        <a href="report.html"><img class="some" src="report.webp" alt="Службова картинка"></a>
+    </nav>
+    <search>
+        <input id="search" type="search" placeholder="Пошук">
+        <button id="search-button">Знайти</button>
+        <button id="sort-button">Сортувати</button>
+        <div id="menu" hidden>
+            <button id="default">За замовчуванням</button>
+            <button id="alphabetical">За алфавітом</button>
+            <button id="reversed-alphabetical">Проти алфавіту</button>
+            <button id="newer">Від новіших до старіших</button>
+            <button id="older">Від старіших до новіших</button>
+        </div>
+    </search>
+    <section id="fandoms">
+
+    </section>
+    <button id="top-button">⬆️</button>
+</body>
+</html>

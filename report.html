@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="#8B5CF6">
+    <title>Питання, погрози, пропозиції</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body class="body-center">
+    <nav>
+        <a href="fandoms.html">FANDOMS</a>
+        <a href="characters.html">CHARACTERS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="quiz.html">QUIZ</a>
+        <a id="selected-chat" href="report.html"><img class="some" src="report.webp" alt="Службова картинка"></a>
+    </nav>
+    <form action="send.php" method="POST">
+        <label>Якщо хочеш побачити якийсь фандом чи персонажа - пиши нижче</label>
+        <input type="text" name="message" required>
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>

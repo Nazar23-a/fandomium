@@ -1,0 +1,73 @@
+[{
+  "image": "https://thumb.wikimedia.org/wikipedia/ru/thumb/1/15/Mario2small.jpg/960px-Mario2small.jpg?utm_source=ru.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+  "name": "Маріо",
+  "relatedWith": ["Маріо"],
+  "desc": "Хоробрий сантехнік",
+  "addDate": "2026-10-25"
+}, {
+  "image": "https://thumb.wikimedia.org/wikipedia/ru/thumb/5/56/Luigi_character_in_Mario.png/960px-Luigi_character_in_Mario.png?utm_source=ru.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+  "name": "Луїджі",
+  "relatedWith": ["Маріо"],
+  "desc": "Вищий брат в зеленому",
+  "addDate": "2026-10-15"
+}, {
+  "image": "https://upload.wikimedia.org/wikipedia/uk/a/ac/%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6_%D0%91%D0%BE%D1%83%D0%B7%D0%B5%D1%80.jpg?utm_source=uk.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+  "name": "Боузер",
+  "relatedWith": ["Маріо"],
+  "desc": "Король Купів",
+  "addDate": "2026-10-07"
+}, {
+  "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Steve%3F_2.png?utm_source=uk.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+  "name": "Стів",
+  "relatedWith": ["Minecraft"],
+  "desc": "Герой за замовчуванням у синій сорочці",
+  "addDate": "2026-10-18"
+}, {
+  "image": "https://upload.wikimedia.org/wikipedia/uk/0/00/Miku_Hatsune.png?utm_source=uk.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+  "name": "Хацуне Міку",
+  "relatedWith": ["Vocaloid"],
+  "desc": "Поп-ідол з бірюзовими хвостиками",
+  "addDate": "2026-10-01"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb7NbiP4jKm-TTZ8DUPt1YFofkxQ1PVwX5XbqlIj7QXPkTXVp_zGbJOm4&s=10",
+  "name": "Кагаміне Рін",
+  "relatedWith": ["Vocaloid"],
+  "desc": "Блондинка з жовтою стрічкою",
+  "addDate": "2026-09-19"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQekLFi8SXPVY66Espbp9oll28A2wN5ex2YcaS68a919QZVYq2aiJ_6rJg&s=10",
+  "name": "Кагаміне Лен",
+  "relatedWith": ["Vocaloid"],
+  "desc": "Блондин",
+  "addDate": "2026-09-25"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1uLNCau_Wyx4ms_hw3lD1RMvxi2AXd8QRsIzqN556pw&s=10",
+  "name": "Наруто",
+  "relatedWith": ["Наруто"],
+  "desc": "Ніндзя з дев'ятьма лисячими хвостами",
+  "addDate": "2026-09-21"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpmx5WvIQzqKSPGB1OQbMEJT-k_uc0KtJzb8L6Bf_M4A&s=10",
+  "name": "Ерен Єгер",
+  "relatedWith": ["Атака титанів"],
+  "desc": "Хоче знищити всіх титанів",
+  "addDate": "2026-09-01"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQseoKXWRbxkf4AuC6wWM32hk_9TVSUqv-TKAmx1LTEWg&s=10",
+  "name": "Діппер Пайнс",
+  "relatedWith": ["Gravity Falls"],
+  "desc": "Допитливий хлопець з журналом",
+  "addDate": "2026-09-09"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFFxRFLEGYtIM72WiJIo2H-Q9zaOP-fzZe1uBo0smBA&s=10",
+  "name": "Мейбл Пайнс",
+  "relatedWith": ["Gravity falls"],
+  "desc": "Щедра дівчина з светрами",
+  "addDate": "2026-09-03"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1PUgxxdkrW_YAxlt2YgKg8gc9rzZZ5qbZxz6uzMUttQ&s=10",
+  "name": "Білл Шифр",
+  "relatedWith": ["Gravity Falls"],
+  "desc": "Містичний жовтий трикутник",
+  "addDate": "2026-10-10"
+}]

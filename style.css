@@ -1,0 +1,198 @@
+* {box-sizing: border-box}
+
+html {scroll-behavior: smooth;}
+
+body {
+    background-color: #151F38;
+    margin: 0;
+}
+
+.body-center {text-align: center;}
+
+button {
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 7px;
+    transition: .5s;
+    background-color: #ffc016 ;
+    font-family: Holtwood One SC, monospace;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main-text, span {
+    color: #00549D;
+    font-family: "Fredoka One", monospace;
+}
+
+#devs {
+    color: white;
+    font-family: "Fredoka One", monospace;
+}
+
+#yellow {
+    color: #ffc928;
+}
+
+#blue {
+    color: #008bff;
+}
+
+#to-characters, #to-fandoms {
+    color: #008bff;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffc928;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+nav {
+    background-color: #8B5CF6;
+    display: grid;
+    grid-template-columns: 2.65fr 3.37fr 1.4fr 1.58fr 1fr;
+    align-items: center;
+    border-bottom: 4px solid black;
+}
+
+nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Holtwood One SC, monospace;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+
+    margin: 0;
+    padding: 0 10px;
+}
+
+nav a:not(:first-child) {
+    border-left: 5px solid black;
+}
+
+search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 19px 0 0 0;
+}
+
+search input {
+    border: none;
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    font-family: Holtwood One SC, monospace;
+    text-align: center;
+}
+
+.sidebar.open {transform: translateX(0);}
+
+.some {margin: 6px 0 0 0;}
+
+#selected {color: #D9D9D9}
+#selected-chat {background-color: #D9D9D9;}
+
+#characters, #fandoms {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    background-color: #8B5CF6;
+    color: #FFFADD;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+label {
+    color: #8B5CF6;
+    font-family: Fredoka One, monospace;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.card h3, .card h2, .card p {
+    margin: 7px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    border-radius: 25px;
+    margin: 10px 0 0 0;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.heading, .from-fandom {font-family: Fredoka One, monospace;}
+.desc {
+    font-family: Ancizar Sans, monospace;
+    font-size: 20px;
+}
+
+.heading {font-size: 30px;}
+
+
+#top-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+/*Адаптив*/
+@media (width <= 900px) {
+    #characters {grid-template-columns: repeat(3, 1fr)}
+    a {gap: 0;}
+}
+
+@media (width <= 700px) {
+    #characters {grid-template-columns: repeat(2, 1fr)}
+}
+
+@media (width <= 600px) {
+    nav {display: flex; flex-direction: column; border-bottom: none;}
+    nav a {margin: 5px 0;}
+    nav a:not(:first-child) {border-left: none}
+}
+
+@media (width <= 500px) {
+    #characters {grid-template-columns: repeat(1, 1fr)}
+    a {
+        gap: 0;
+        margin: 5px;
+        width: 100%;
+        justify-content: center;
+        border: none;
+    }
+    nav {display: flex; flex-direction: column;}
+}

@@ -1,0 +1,37 @@
+[{
+  "question": "Що це?",
+  "image": "./img/minecraft.webp",
+  "imageMobile": "./img/minecraft_mobile.webp",
+  "answers": ["Minecraft", "Naruto", "Mario"],
+  "correct": 0
+}, {
+  "question": "Що це?",
+  "image": "./img/gravity_falls.webp",
+  "imageMobile": "./img/gravity_falls_mobile.webp",
+  "answers": ["Vocaloid", "Gravity falls", "Attack on titan"],
+  "correct": 1
+}, {
+  "question": "Що це?",
+  "image": "./img/attack_on_titan.webp",
+  "imageMobile": "./img/attack_on_titan_mobile.webp",
+  "answers": ["Vocaloid", "Gravity falls", "Attack on titan"],
+  "correct": 2
+},  {
+  "question": "Що це?",
+  "image": "./img/mario.webp",
+  "imageMobile": "./img/mario_mobile.webp",
+  "answers": ["Mario", "Marvel", "Harry Potter"],
+  "correct": 0
+}, {
+  "question": "Що це?",
+  "image": "./img/vocaloid.webp",
+  "imageMobile": "./img/vocaloid_mobile.webp",
+  "answers": ["Bizarre JoJo adventure", "Vocaloid", "Rick & Morty"],
+  "correct": 1
+}, {
+  "question": "Що це?",
+  "image": "./img/naruto.webp",
+  "imageMobile": "./img/naruto_mobile.webp",
+  "answers": ["Vocaloid", "Minecraft", "Naruto"],
+  "correct": 2
+}]

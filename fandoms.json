@@ -1,0 +1,37 @@
+[{
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAq9OvNURsYaGj3PhmJAUhjYk84QYQXTy5AdjlYSt4CI28Z_cTnzlTXn0bixz2NBjkZidNh7gbvq6vbWR-RDuxI0VvkZm3MwqDttwi3qYyQQ&s=10",
+  "name": "Minecraft",
+  "desc": "Культова гра в жанрі пісочниці у відкритому світі з поглядом від першої/третьої особи, розроблена та видана Mojang Studios у 2011 році.",
+  "relatedWith": ["Стів"],
+  "addDate": "2026-10-26"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlWIKu_TMvSOeDO8PyD0Bu7iUkthb7AD7bbLBtL0E-Lg&s",
+  "name": "Маріо",
+  "desc": "...",
+  "relatedWith": ["Маріо", "Луїджі", "Боузер"],
+  "addDate": "2026-10-27"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtD7gG640ph2a01QMFCTJZazu0PKmdfpC2hP2pbjnB6A&s=10",
+  "name": "Атака титанів",
+  "desc": "...",
+  "relatedWith": ["Ерен Єгер"],
+  "addDate": "2026-10-27"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBN8hMKeQ8QesDGHHQvotBkcebaHdsJLXY3yF-Lfv8mg&s=10",
+  "name": "Gravity Falls",
+  "desc": "...",
+  "relatedWith": ["Діппер Панйс", "Мейбл Пайнс", "Білл Шифр"],
+  "addDate": "2026-10-27"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwrGarnNiiyWtpD00LjrswiQ3mVtzg-uDEojzIynIyvA&s=10",
+  "name": "Наруто",
+  "desc": "...",
+  "relatedWith": ["Наруто"],
+  "addDate": "2026-10-27"
+}, {
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvbL-7vpxDvIuJ-HlTWNTNSB7CQcL0b4MgxyTf1VH3jw&s=10",
+  "name": "Vocaloid",
+  "desc": "...",
+  "relatedWith": ["Хацуне Міку", "Кагаміне Рін", "Кагаміне Лен"],
+  "addDate": "2026-10-27"
+}]
