@@ -9,6 +9,6 @@ export async function load(fileName) {
         return await response.json();
     }
     catch (error) {
-        console.error("Критична помилка мережі:", error); // Сюди код потрапить, ТІЛЬКИ якщо пропав інтернет або файл взагалі зник
+        console.error("Критична помилка мережі:", error);
     }
 }

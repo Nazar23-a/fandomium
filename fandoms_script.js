@@ -2,16 +2,25 @@
 /*jshint esversion: 8, browser: true*/
 
 import {sort, sortByDate, reversedSort, reversedSortByDate} from "./sort.mjs";
-import {searchFn, listeners} from './search.mjs';
+import {listeners} from './search.mjs';
 import {render} from './render.mjs';
 import {load} from './load.mjs';
+import {pagination, getPageItems} from "./pagination.mjs";
 
 const data = await load("fandoms.json");
 
 let fandoms = data;
 let originalFandoms = [...data];
+const firstPageItems = getPageItems(fandoms);
 
-render(fandoms, "#fandoms");
+function update() {
+    render(firstPageItems, "#fandoms");
+    pagination(fandoms, render, "#fandoms");
+    currentPage = 1;
+}
+
+render(firstPageItems, "#fandoms");
+pagination(fandoms, render, "#fandoms");
 
 const def = document.querySelector("#default");
 const alphabetical = document.querySelector("#alphabetical");
@@ -22,36 +31,46 @@ const older = document.querySelector("#older");
 if(alphabetical) {
     alphabetical.addEventListener("click", () => {
         fandoms = sort(fandoms);
-        render(fandoms, "#fandoms");
+        update();
     });
 }
 
 if(reversedAlphabetical) {
     reversedAlphabetical.addEventListener("click", () => {
         fandoms = reversedSort(fandoms);
-        render(fandoms, "#fandoms");
+        update();
     });
 }
 
 if(newer) {
     newer.addEventListener("click", () => {
         fandoms = sortByDate(fandoms);
-        render(fandoms, "#fandoms");
+        update();
     });
 }
 
 if(older) {
     older.addEventListener("click", () => {
         fandoms = reversedSortByDate(fandoms);
-        render(fandoms, "#fandoms");
+        update();
     });
 }
 
 if(def) {
     def.addEventListener("click", () => {
         fandoms = [...originalFandoms];
-        render(fandoms, "#fandoms");
+        update();
     });
 }
 
 listeners(() => fandoms, render, "#fandoms");
+const button = document.querySelector("#sort-button");
+const menu = document.querySelector("#menu");
+
+button.addEventListener("click", function () {
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+});

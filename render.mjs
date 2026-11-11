@@ -24,4 +24,7 @@ export function render(list, selector) {
         card.innerHTML = htmlPolicy.createHTML(html);
         characterCards.append(card);
     });
+    const headingElement = document.querySelector('.nothing');
+    if (!headingElement) return;
+    const del = headingElement.remove();
 }
