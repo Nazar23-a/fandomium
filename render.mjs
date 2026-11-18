@@ -16,6 +16,11 @@ export function render(list, selector) {
     list.forEach(element => {
         const card = document.createElement("div");
         card.classList.add("card");
+        const type = selector === "#fandoms" ? "fandom" : "character";
+        card.addEventListener("click", () => {
+            window.location.href =
+                `${type}.php?id=${encodeURIComponent(element.id)}`;
+        });
         const html = `
         <img src="${element.image}" alt="${element.name}" loading="lazy">
         <h2 class="heading">${element.name}</h2>
@@ -26,5 +31,5 @@ export function render(list, selector) {
     });
     const headingElement = document.querySelector('.nothing');
     if (!headingElement) return;
-    const del = headingElement.remove();
+    headingElement.remove();
 }

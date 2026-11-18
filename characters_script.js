@@ -5,7 +5,7 @@ import {reversedSort, reversedSortByDate, sort, sortByDate} from "./sort.mjs";
 import {listeners} from './search.mjs';
 import {render} from './render.mjs'
 import {load} from './load.mjs';
-import {pagination, getPageItems} from "./pagination.mjs";
+import {pagination, getPageItems, resetPage} from "./pagination.mjs";
 
 const data = await load("characters.json");
 
@@ -14,9 +14,9 @@ let originalCharacters = [...data];
 const firstPageItems = getPageItems(characters);
 
 function update() {
-    render(firstPageItems, "#characters");
+    resetPage();
+    render(getPageItems(characters), "#characters");
     pagination(characters, render, "#characters");
-    currentPage = 1;
 }
 
 render(firstPageItems, "#characters");

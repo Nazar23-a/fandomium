@@ -5,7 +5,7 @@ import {sort, sortByDate, reversedSort, reversedSortByDate} from "./sort.mjs";
 import {listeners} from './search.mjs';
 import {render} from './render.mjs';
 import {load} from './load.mjs';
-import {pagination, getPageItems} from "./pagination.mjs";
+import {pagination, getPageItems, resetPage} from "./pagination.mjs";
 
 const data = await load("fandoms.json");
 
@@ -14,9 +14,9 @@ let originalFandoms = [...data];
 const firstPageItems = getPageItems(fandoms);
 
 function update() {
-    render(firstPageItems, "#fandoms");
+    resetPage()
+    render(getPageItems(fandoms), "#fandoms");
     pagination(fandoms, render, "#fandoms");
-    currentPage = 1;
 }
 
 render(firstPageItems, "#fandoms");
@@ -31,7 +31,7 @@ const older = document.querySelector("#older");
 if(alphabetical) {
     alphabetical.addEventListener("click", () => {
         fandoms = sort(fandoms);
-        update();
+       update();
     });
 }
 

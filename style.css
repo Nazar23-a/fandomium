@@ -20,6 +20,17 @@ button {
     cursor: pointer;
 }
 
+ul, li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.images {
+    max-height: 400px;
+    max-width: 300px;
+}
+
 button:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -92,6 +103,7 @@ search {
     overflow: hidden;
     background-color: #fff;
     border-radius: 25px;
+    z-index: 1;
 }
 
 #menu button {
@@ -145,7 +157,21 @@ label {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 15px;
+}
+
+form input {
+    border: none;
+    width: 300px;
+    max-width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-family: Holtwood One SC, monospace;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
 }
 
 .card h3, .card h2, .card p {margin: 7px;}
@@ -166,7 +192,6 @@ img {
 }
 
 .heading, .from-fandom {font-family: Fredoka One, monospace;}
-
 .desc {
     font-family: Ancizar Sans, monospace;
     font-size: 20px;
@@ -180,7 +205,7 @@ img {
     right: 25px;
 }
 
-#pagination { text-align: center }
+#pagination {text-align: center;}
 
 /*Адаптив*/
 @media (width <= 900px) {
@@ -201,10 +226,10 @@ img {
 @media (width <= 500px) {
     body {display: flex; flex-direction: column;}
     #characters, #fandoms {grid-template-columns: repeat(1, 1fr)}
-    a {
+    nav a {
         gap: 0;
-        margin: 5px;
-        width: 100%;
+        margin: 5px 0;
+        width: 90%;
         justify-content: center;
         border: none;
     }

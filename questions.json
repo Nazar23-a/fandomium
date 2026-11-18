@@ -34,4 +34,28 @@
   "imageMobile": "./img/naruto_mobile.webp",
   "answers": ["Vocaloid", "Minecraft", "Naruto"],
   "correct": 2
+}, {
+  "question": "Що це?",
+  "image": "./img/sponge_bob.webp",
+  "imageMobile": "./img/sponge_bob_mobile.webp",
+  "answers": ["la", "Sponge Bob", "la-la-la"],
+  "correct": 1
+}, {
+  "question": "Що це?",
+  "image": "./img/sonic.webp",
+  "imageMobile": "./img/sonic_mobile.webp",
+  "answers": ["Sonic", "X", "Y"],
+  "correct": 0
+}, {
+  "question": "Що це?",
+  "image": "./img/one_piece.webp",
+  "imageMobile": "./img/one_piece_mobile.webp",
+  "answers": ["A", "B", "One Piece"],
+  "correct": 2
+}, {
+  "question": "Що це?",
+  "image": "./img/angry_birds.webp",
+  "imageMobile": "./img/angry_birds_mobile.webp",
+  "answers": ["A", "F", "Angry Birds"],
+  "correct": 2
 }]

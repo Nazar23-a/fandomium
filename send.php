@@ -133,7 +133,7 @@ try {
             <link rel="preload" href="style.css" as="style">
             <link rel="stylesheet" href="style.css">
         </head>
-        <body class='body-center'>
+        <body>
             <nav>
                 <a href="fandoms.html">FANDOMS</a>
                 <a href="characters.html">CHARACTERS</a>
@@ -141,7 +141,7 @@ try {
                 <a href="quiz.html">QUIZ</a>
                 <a id="selected-chat" href="report.html"><img class="some" src="report.webp" alt="Службова картинка"></a>
             </nav>
-            <h1 class='white'>Дякую! Повідомлення успішно надіслано 💜</h1>
+            <h1 class="white">Дякую! Повідомлення успішно надіслано 💜</h1>
         </body>
     </html>
 HTML;
@@ -162,7 +162,7 @@ HTML;
             <link rel="preload" href="style.css" as="style">
             <link rel="stylesheet" href="style.css">
         </head>
-        <body class='body-center'>
+        <body>
             <nav>
                 <a href="fandoms.html">FANDOMS</a>
                 <a href="characters.html">CHARACTERS</a>
@@ -170,8 +170,8 @@ HTML;
                 <a href="quiz.html">QUIZ</a>
                 <a id="selected-chat" href="report.html"><img class="some" src="report.webp" alt="Службова картинка"></a>
             </nav>
-            <h1 class='white'>Сталася якась помилка 🥲</h1>
-            <h2 class='white'>Спробуй ще раз пізніше</h2>
+            <h1 class="white">Сталася якась помилка 🥲</h1>
+            <h2 class="white">Спробуй ще раз пізніше</h2>
         </body>
     </html>
 HTML;

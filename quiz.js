@@ -16,7 +16,6 @@ function shuffle(array) {
 async function loadQuestions() {
     try {
         const response = await fetch("./questions.json");
-
         if (!response.ok) {
             console.log("Помилка: Не вдалося завантажити питання");
             questions = [];
@@ -110,7 +109,7 @@ function renderQuestions() {
     const progress = document.createElement("p");
     progress.classList.add("progress");
     progress.textContent =
-        `Запитання ${currentQuestionIndex + 1} з ${questions.length}`;
+        `Запитання ${currentQuestionIndex + 1} з ${questionOrder.length}`;
 
     card.prepend(progress);
 }
@@ -167,7 +166,7 @@ function checkAnswer(event) {
 function nextQuestion() {
     currentQuestionIndex++;
 
-    if (currentQuestionIndex >= questions.length) {
+    if (currentQuestionIndex >= questionOrder.length) {
         showResults();
         return;
     }
@@ -188,10 +187,10 @@ function showResults() {
 
     const result = document.createElement("p");
     result.textContent =
-        `Ти набрав ${points} з ${questions.length} балів!`;
+        `Ти набрав ${points} з ${questionOrder.length} балів!`;
     card.appendChild(result);
 
-    const percentage = Math.round(points / questions.length * 100);
+    const percentage = Math.round(points / questionOrder.length * 100);
 
     const score = document.createElement("p");
     score.textContent = `Результат: ${percentage}%`;
@@ -199,9 +198,9 @@ function showResults() {
 
     const meter = document.createElement("meter");
     meter.min = 0;
-    meter.max = questions.length;
+    meter.max = questionOrder.length;
     meter.value = points;
-    meter.textContent = `${points} з ${questions.length}`;
+    meter.textContent = `${points} з ${questionOrder.length}`;
     card.appendChild(meter);
 
     const restartButton = document.createElement("button");
@@ -219,6 +218,12 @@ function reset() {
     questionOrder = questions.map((_, index) => index);
     shuffle(questionOrder);
 
+    const max = Math.min(25, questions.length);
+    const min = Math.min(3, max);
+    const n = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    questionOrder = questionOrder.slice(0, n);
+
     renderQuestions();
 }
 
@@ -228,11 +233,11 @@ start.addEventListener("click", async () => {
     start.disabled = true;
     await loadQuestions();
     if (questions.length === 0) {
-        greetings.textContent = "Не вдалося завантажити запитання."
+        greetings.textContent = "Не вдалося завантажити запитання 😭"
         start.disabled = false;
         return;
     }
     start.hidden = true;
-    greetings.textContent = "";
+    greetings.textContent = '';
     reset();
 });
